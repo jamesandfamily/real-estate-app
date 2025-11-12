@@ -4,7 +4,7 @@ export default {
   // Config options...
   // Server-side render by default, to enable SPA mode set this to `false`
   ssr: false,
-  basename: "/real-estate-app", 
+  basename: process.env.BASE_PATH || "/real-estate-app", 
   future: {
     unstable_optimizeDeps: true,
   },
