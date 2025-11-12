@@ -5,7 +5,7 @@
   "scripts": {
     "build": "react-router build",
     "build:netlify": "react-router build && node scripts/create-html.js",
-    "build:github": "react-router build && BASE_PATH=/real-estate-app node scripts/create-html.js",
+    "build:github": "BASE_PATH=/real-estate-app react-router build && BASE_PATH=/real-estate-app node scripts/create-html.js",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
