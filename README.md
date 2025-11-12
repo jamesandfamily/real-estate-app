@@ -36,7 +36,7 @@ Start the development server with HMR:
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+Your application will be available at `http://localhost:5173/real-estate-app/`.
 
 ## Building for Production
 
@@ -46,7 +46,35 @@ Create a production build:
 npm run build
 ```
 
+### Build for GitHub Pages
+
+Build with GitHub Pages configuration:
+
+```bash
+npm run build:github
+```
+
+### Build for Netlify
+
+Build with Netlify configuration:
+
+```bash
+npm run build:netlify
+```
+
 ## Deployment
+
+### GitHub Pages (Automatic)
+
+This project is configured for automatic deployment to GitHub Pages. Every push to the `master` branch triggers a deployment workflow.
+
+The live site is available at: `https://jamesandfamily.github.io/real-estate-app/`
+
+For detailed setup information, see [GITHUB_PAGES_SETUP.md](./GITHUB_PAGES_SETUP.md)
+
+### Netlify Deployment
+
+See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for Netlify deployment instructions.
 
 ### DIY Deployment
 
